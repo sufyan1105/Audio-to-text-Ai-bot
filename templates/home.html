@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload an Audio File</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background: url('../bg.jpg') center center fixed; /* Set the URL to your background image */
+            background-size: cover;
+            background-color: #f0f0f0; /* Fallback background color */
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            background: #333;
+            height: 50px;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 180px;
+        }
+
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            text-align: center; 
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            form {
+                width: 100%;
+            }
+        }
+
+        input[type="file"],
+        input[type="text"],
+        input[type="submit"] {
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0e4683;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index">Home</a>
+        <a href="about">About</a>
+        <a href="contact">Contact</a>
+    </nav>
+    <div class="upload-form">
+    <h1>Upload an Audio File</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="text" name="language" placeholder="Language">
+        <input type="submit" value="Upload">
+    </form>
+    </div>
+</body>
+
+</html>

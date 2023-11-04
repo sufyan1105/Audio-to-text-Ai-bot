@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('../bg.jpg') center center fixed; /* Set the URL to your background image */
+            background-size: cover;
+            background-color: #f0f0f0; /* Fallback background color */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3a383b; /* Change to your desired text color */
+        }
+
+        .output-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Translation Output</h1>
+    <div class="output-container">
+        <p>{{ output_content }}</p>
+    </div>
+</body>
+</html>
