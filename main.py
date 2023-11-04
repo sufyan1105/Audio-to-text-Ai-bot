@@ -3,7 +3,7 @@ import os
 import openai
 audio = "static/[SPOTIFY-DOWNLOADER.COM] A Man Without Love.mp3"
 audio1 = "static/pyari maa.mp3"
-openai.api_key = "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"
+openai.api_key = "(YOUR API KEY)"
 
 app = Flask(__name__, template_folder="templates")
 app.config["UPLOAD_FOLDER"] = "static"
